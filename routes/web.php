@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/est');
 });
+Route::view('/est','nino.start')->name('nino');
+Route::view('/est/mat','nino.materia')->name('nino.materia');
+Route::view('/est/mat/tareas','nino.tarea')->name('nino.tarea');
+Route::view('/est/mat/tareas/resp','nino.respuesta')->name('nino.respuesta');
+Route::view('/est/rec','nino.recurso')->name('nino.recurso');
+Route::view('/est/rec/mat','nino.recursoMat')->name('nino.recurso.materia');
+
