@@ -16,5 +16,6 @@
         <a role="button" href= "{{ route('nino.recurso') }}" class="btn btn-success btn-lg btn-block">Recursos</a>
     </div>
 </div>
+@include('partials.serviceW')
 
 

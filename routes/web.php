@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/est');
-});
-Route::view('/est','nino.start')->name('nino');
+// Route::get('/', function () {
+//     return redirect('/est');
+// });
+Route::view('/','nino.start')->name('nino');
 Route::view('/est/mat','nino.materia')->name('nino.materia');
 Route::view('/est/mat/tareas','nino.tarea')->name('nino.tarea');
 Route::view('/est/mat/tareas/resp','nino.respuesta')->name('nino.respuesta');

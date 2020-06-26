@@ -7,5 +7,6 @@
     <div>
     @yield('contend')
     </div>
+    
     </body>
 </html>
