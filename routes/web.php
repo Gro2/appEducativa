@@ -17,9 +17,12 @@ use Illuminate\Support\Facades\Route;
 //     return redirect('/est');
 // });
 Route::view('/','nino.start')->name('nino');
-Route::view('/est/mat','nino.materia')->name('nino.materia');
-Route::view('/est/mat/tareas','nino.tarea')->name('nino.tarea');
-Route::view('/est/mat/tareas/resp','nino.respuesta')->name('nino.respuesta');
-Route::view('/est/rec','nino.recurso')->name('nino.recurso');
-Route::view('/est/rec/mat','nino.recursoMat')->name('nino.recurso.materia');
+Route::get('/est/mat','NinoController@listaMateriasA')->name('nino.materia');
+Route::get('/est/mat/tareas','NinoController@listaTareas')->name('nino.tarea');
+Route::get('/est/mat/tareas/resp','NinoController@respTarea')->name('nino.respuesta');
+Route::get('/est/rec','NinoController@listaMateriasR')->name('nino.recurso');
+Route::get('/est/rec/mat','NinoController@listaRecursos')->name('nino.recurso.materia');
 
+
+Route::get('/add','FirebaseController@index');
+Route::get('/get','FirebaseController@getPost');

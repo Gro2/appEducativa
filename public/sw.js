@@ -119,7 +119,7 @@ self.addEventListener('activate', event => {
      
      self.addEventListener('fetch', function (event) {
      
-       var url = 'https://testvacj.firebaseio.com/images'
+       var url = 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
        if (event.request.url.indexOf(url) > -1) {
          event.respondWith(
            caches.open(DYNAMIC_CACHE)

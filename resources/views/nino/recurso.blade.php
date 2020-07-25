@@ -11,10 +11,12 @@
     <br>
     
     <br>
-         <a role="button" href="{{route('nino.recurso.materia', ['materia' => 'Matematicas'])}}" class="btn btn-info btn-lg btn-block">Matematicas  <span style="color:LIGHTGRAY; background:LIGHTGRAY" class="badge">new</span></a>
-        <a role="button" href="{{route('nino.recurso.materia', ['materia' => 'Biologia'])}}" class="btn btn-info btn-lg btn-block">Biologia <span style="color:red; background:red" class="badge">new</span></a>
+        @foreach($mats as $mat)
+         <a role="button" href="{{route('nino.recurso.materia', $mat)}}" class="btn btn-info btn-lg btn-block">{{$mat['nombre']}}  <span style="color:LIGHTGRAY; background:LIGHTGRAY" class="badge">new</span></a>
+        @endforeach
+        <!-- <a role="button" href="{{route('nino.recurso.materia', ['materia' => 'Biologia'])}}" class="btn btn-info btn-lg btn-block">Biologia <span style="color:red; background:red" class="badge">new</span></a>
         <a role="button" href="{{route('nino.recurso.materia', ['materia' => 'Quimica'])}}" class="btn btn-info btn-lg btn-block">Quimica <span style="color:lime; background:lime" class="badge badge- primary">new</span></a>        
-       
+        -->
     </div>
 </div>
 

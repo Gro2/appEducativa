@@ -6,8 +6,8 @@
     
  
         <h3 align="center" style= "color: Black;">Actividades</h3> 
-        <h4 align="center" style= "color: Green;">{{$_GET['materia']}}</h4> 
-        <h4 align="center" style= "color: Green;">Tarea {{$_GET['tarea']}}</h4> 
+        <h4 align="center" style= "color: Green;">{{$tarea['materia']}}</h4> 
+        <h4 align="center" style= "color: Green;">{{$tarea['nombre']}}</h4> 
     </div>
     <div>
     <br>
@@ -15,11 +15,11 @@
     
     <div class="card">
         <div class="card-body">
-            Texto de prueba donde se escribira la descripcion de la tarea.
+            {{$tarea['descripcion']}}
             <br>
             <br>
             <a href="#" class="badge badge-light"><i class="fas fa-file-alt fa-3x"></i> Doc 1</a>
-            
+            <!-- aca vendria $tarea['archivo'] para descarga del archivo -->
          </div>
          
     </div>
