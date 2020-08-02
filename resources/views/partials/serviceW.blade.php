@@ -9,3 +9,4 @@ if('serviceWorker' in navigator) {
         });
 }
 </script>
+ <!-- <script type="module" src="{{ asset('db.js') }}"></script> -->

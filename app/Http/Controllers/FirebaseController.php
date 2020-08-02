@@ -135,6 +135,7 @@ class FirebaseController extends Controller
 
         public function getPost()
         {
+           
             $posts = array();
             $serviceAccount = ServiceAccount::fromJsonFile(__DIR__.'./firebase_key.json');
             $firebase = (new Factory)
@@ -147,6 +148,7 @@ class FirebaseController extends Controller
             dd($snapshot);
     
             return $posts;
+           
     
         }
         

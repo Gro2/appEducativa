@@ -16,6 +16,31 @@
         <a role="button" href= "{{ route('nino.recurso') }}" class="btn btn-success btn-lg btn-block">Recursos</a>
     </div>
 </div>
-@include('partials.serviceW')
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script type="text/javascript" src="db.js"></script>
+<!-- @include('partials.serviceW')  -->
+<!-- 
 
 
+
+  <script src="./js/idb.js"></script>
+    <script src="./js/db-utils.js"></script>
+
+    <script src="./js/add.js"></script>
+  <script src="./js/fetch.js"></script>
+<script src="./js/promise.js"></script>
+    <script src="./js/app.js"></script>
+
+
+    <script src="db.js" type="module"></script> 
+
+<script>
+    var db = new Dexie("Orders");
+    db.version(1).stores({
+      orders: "++id,item,quantity,address,driver_id,completed,created_at,updated_at"
+    });
+    console.console.log("done");
+</script>
+-->
