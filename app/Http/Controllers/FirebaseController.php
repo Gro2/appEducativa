@@ -122,6 +122,14 @@ class FirebaseController extends Controller
         'descripcion' => 'Texto de prueba donde se escribira la descripcion de la tarea de bichos.',  
         'archivo' => 'path del archivo',             
         ]);
+        $newPost = $database
+        ->getReference('tarea')
+        ->push([
+        'alumno' => 'test',
+        'actividad' => 'test',
+        'respuesta' => 'respuesta de prueba',    
+        ]);
+
 
 
         //$newPost->getKey(); // => -KVr5eu8gcTv7_AHb-3-
@@ -143,7 +151,7 @@ class FirebaseController extends Controller
                         ->withDatabaseUri('https://appeduca-55a94.firebaseio.com/')
                         ->create();
             $database = $firebase->getDatabase();
-            $reference = $database->getReference('alumno');
+            $reference = $database->getReference('tarea');
             $snapshot = $reference->orderByKey()->getSnapshot()->getvalue();
             dd($snapshot);
     

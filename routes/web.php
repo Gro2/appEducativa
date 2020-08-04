@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 //     return redirect('/est');
 // });
 Route::view('/','nino.start')->name('nino');
+Route::view('/ejemTar','nino.respEjem')->name('nino.ejemTar');
+
 Route::get('/est/mat','NinoController@listaMateriasA')->name('nino.materia');
 Route::get('/est/mat/tareas','NinoController@listaTareas')->name('nino.tarea');
 Route::get('/est/mat/tareas/resp','NinoController@respTarea')->name('nino.respuesta');

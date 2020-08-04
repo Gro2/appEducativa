@@ -6,8 +6,8 @@
     
  
         <h3 align="center" style= "color: Black;">Actividades</h3> 
-        <h4 name="mat" align="center" style= "color: Green;">{{$tarea['materia']}}</h4> 
-        <h4 align="center" style= "color: Green;">{{$tarea['nombre']}}</h4> 
+        <h4 name="mat" align="center" style= "color: Green;">Matematicas</h4> 
+        <h4 align="center" style= "color: Green;">Tarea de fracciones</h4> 
     </div>
     <div>
     <br>
@@ -15,10 +15,10 @@
     
     <div class="card">
         <div class="card-body">
-            {{$tarea['descripcion']}}
+           La tarea de fracciones es importante para el avanse de la matematica en el niño
             <br>
             <br>
-            <a href="#" class="badge badge-light"><i class="fas fa-file-alt fa-3x"></i> Doc 1</a>
+            <a href="#" class="badge badge-light"><i class="fas fa-file-alt fa-3x"></i> Libro_fracciones</a>
             <!-- aca vendria $tarea['archivo'] para descarga del archivo -->
          </div>
          

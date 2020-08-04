@@ -7,9 +7,8 @@
 
         <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
 
-        <script src="dexie-observable.min.js"></script>
-        <script src="dexie-syncable.min.js"></script>
-        <script src="SyncProt.js"></script>
+       
+        <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">

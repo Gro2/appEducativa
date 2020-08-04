@@ -1,6 +1,14 @@
 @include('layout.app')
 @section('contend')
 <div class="container">
+<button id="bNot"type="button" class="btn btn-primary btn-sm" onclick="confirmNotification();">Activar Notificaciones</button>
+
+<div class="wrapper">
+
+    
+</div>     
+
+
     <div>
     <br>
  
@@ -11,16 +19,23 @@
     <br>
     
     <br>
+  
       
         <a role="buttom" href= "{{ route('nino.materia') }}" class="btn btn-info btn-lg btn-block" >Actividades</a>
         <a role="button" href= "{{ route('nino.recurso') }}" class="btn btn-success btn-lg btn-block">Recursos</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a role="button" href= "{{ route('nino.ejemTar') }}" class="btn btn-warning btn-lg btn-block">Ejemplo de tarea</a>
     </div>
 </div>
 
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
 <script type="text/javascript" src="db.js"></script>
-<!-- @include('partials.serviceW')  -->
+
+  @include('partials.serviceW') 
 <!-- 
 
 

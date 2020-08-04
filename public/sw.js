@@ -71,8 +71,11 @@ self.addEventListener('activate', event => {
      let STATIC_FILES = [
       'favicon.ico',
       '/',
-      
+      '/db.js',
+      '/envio.js',
       '/est/mat',
+      '/ejemTar',
+      'https://unpkg.com/dexie@latest/dist/dexie.js',
      //  '/est/mat/tareas',
     //   '/est/mat/tares/resp',
        '/est/rec'
@@ -166,4 +169,6 @@ self.addEventListener('activate', event => {
          )
        }
      })
+
+    
      
