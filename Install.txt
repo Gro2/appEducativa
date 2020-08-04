@@ -1,0 +1,98 @@
+para el funcionamiento del proyecto en fase final se debe contar con: xampp, composer, node.js(opcional), git
+instalar composer:
+
+se debe ejecutar los comando:
+	sudo apt update
+	sudo apt install curl php-cli php-mbstring git unzip
+nos posicionamos en el directorio de inicio y ejecutamos
+	cd ~
+	curl -sS https://getcomposer.org/installer -o composer-setup.php
+creamos variable para verificar que el instalador coincida con el hash SHA-384 para el instalador más reciente
+encontrado en la página Composer Public Keys/Signatures. 
+	HASH="hash de dicha pagina"
+ejecutamos este codigo para verificar que el script se ejecute de forma segura
+	php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+usamos el siguiente comando para instalar composer de forma global
+	sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+con esto composer estara instalado
+
+instalar xampp:
+descargamos el archivo respectivo a instalacion linux de :https://www.apachefriends.org/index.html
+nos movemos al directorio de descargas con el comando cd
+damos permiso de ejecucion con:
+ 	chmod 755 xampp-linux-x64-7.2.10-0-installer.run
+ejecutamos el archivo con:
+	sudo ./xampp-linux-7.2.10-0-installer.run
+entonces despues seguimos las indicaciones del instalador y finalizamos con el instalador
+esto nos dara el lenguaje php necesario para el proyecto.
+
+instalacion git:
+para instalar git solo ejecutamos el codigo:
+	sudo apt update
+	sudo apt install git
+
+con esto ya prodriamos descargar el proyecto desde el repositorio y clonar en un carpeta con el comando clone:
+	git clone https://github.com/Gro2/appEducativa.git
+
+y despues corrremos el programa con: php artisan serve
+
+si deseamos correr versiones anteriores donde se usa modulos seria necesario instalar node.js:
+	sudo apt install nodejs
+como en la mayoria de los casos es necesario el administrador de paquetes de node instalamos npm:
+	sudo apt install npm
+con esto podemos ejecutar versiones anteriores como el commit "dexie sync" el cual en el momento de clonar la aplicacion
+ejecutamos:
+	npm install
+y despues recien ejecutamos la aplicacion con php artisan serve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
